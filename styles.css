@@ -14,6 +14,19 @@ a.link {
     color: #e7c91d;
     text-decoration: none;
 }
+table {
+    border: #dfdfdf 1px solid;
+}
+td {
+    border: #dfdfdf 1px solid;
+    text-align: center; 
+}
+th {
+    text-align: center;
+}
+.unstable {
+    background-color: #550000;
+}
 @media (max-width: 48em) {
     h2 {
         font-size: 2em;
