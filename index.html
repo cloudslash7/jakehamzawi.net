@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang = 'en-US'>
+<html lang = "en-US">
 	<head>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel='stylesheet' href='/styles.css'/>
+		<meta name="viewport"
+    	content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 		<meta charset='UTF-8'/>
-		<title>Jake's Website</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="/styles.css"/>
+		<title>Jake's Database</title>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#"><img src="/icon.png" width=50px></a>
+			<a class="navbar-brand" href="/"><img src="/icon.png" width=50px></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -18,10 +20,10 @@
 						<a class="nav-link" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/portfolio/index.html">Portfolio</a>
+						<a class="nav-link" href="/emulation/">Emulation</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/favorite-sites.html">Blog</a>
+						<a class="nav-link" href="/favorite-sites.html">Media Server</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.store.jakehamzawi.net">Store</a>
@@ -33,18 +35,35 @@
 			</div>
 		</nav>
 
-		<div class='header-container'>
-			<h1>Jake Hamzawi</h1>
+		<h1 class="header">THE DATABASE</h1>
+
+		<div class="container">
+			<p class="caption">Hours and hours of miscellaneous internet searching, troubleshooting have led 
+				to this database, a collection of tips and resources for doing and making cool things with tech!</p>
+		</div>
+			
+		
+		<div class="container">
+			<h2 class="header"><a class="link" href="/emulation/">Emulation</a></h2>
+			<img id="retroarch" src="/images/retroarch.png"/>
+			<div class="caption">Playing something on something it never should have been played 
+				on - nothing brings me more joy. Not even the something I'm playing!</div>
 		</div>
 
-		<p>This is my website! There's not a whole lot to it for now, but with time I think
-		it will turn out really cool!
-		</p>
-		<p>I have a couple pages:</p>
-  
-		<ul>
-		</ul>  
-		<p>Check them out if you have nothing better to do!</p>
+		<div class="container">
+			<h2 class="header"><a class="link" href="/media-server/">Home Media Server</a></h2>
+			<img id="retroarch" src="/images/plex.png"/>
+			<div class="caption">There are more streaming services than movies I've watched in the last three months. 
+				If you're like me and only watch a handful of shows and movies, stop paying for shows you don't watch and 
+				buy the ones you do. Set up your own media server powered by Plex, an awesome free media hosting software!</div>
+		</div>
+
+		<div class="container">
+			<h2 class="header">Home Media Server</h2>
+			<img id="retroarch" src="/images/retroarch.png"/>
+			<div class="caption">Playing something on something it never should have been played 
+				on - nothing brings me more joy. Not even the something I'm playing!</div>
+		</div>
 		
 		<hr/>
 		<p>Created by Jake Hamzawi</p>
