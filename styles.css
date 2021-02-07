@@ -10,6 +10,9 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+hr {
+    border-top: #dfdfdf 1px solid;
+}
 a.link {
     color: #e7c91d;
     text-decoration: none;
@@ -34,6 +37,17 @@ th {
     h2 {
         font-size: 2em;
     }
+    .masonry {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        column-count: 1;
+        column-gap: 1em;
+        align-items: center;
+        margin-bottom: 4em;
+        width: 100%;
+        padding-bottom: 3em;
+    }
     .cover-image {
         object-fit: cover;
         width: 100%;
@@ -42,20 +56,20 @@ th {
     }
     .container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        margin-bottom: 4em;
+        margin-bottom: 3em;
         width: 100%;
     }
-    .req-container {
+    .mini-container {
         display:flex;
         align-items: center;
         flex-wrap: wrap;
-        width: 400px;
+        width: 100%;
         justify-content: center;
-        padding: 1em;
-        margin: 3em;
+        width: 90%;
+        padding: .5em;
     }
     .header {
         text-align: center;
@@ -67,15 +81,15 @@ th {
         text-align: center;
     }
     .image {
-        width: 150px;
+        width: 175px;
     }
     a.requirement {
         font-size: 1.5em;
         margin: 1em;
         text-align: center;
     }
-    #retroarch {
-        width: 60%;
+    .home-image {
+        width: 80%;
         margin-bottom: 2em;
     }
     #about-photo {
@@ -83,14 +97,78 @@ th {
         width: 70%;
         height: 70%;
     }
-    
     #contact {
         text-align: center;
     }
 }
 @media (min-width: 48em) {
     .navbar-nav {
-      margin-left: auto!important;
-      margin-right: 0!important;
-  }
+        margin-left: auto!important;
+        margin-right: 0!important;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        margin: 2em;
+        font-size: 3em;
+        text-align: center;
+    }
+    .masonry { /* Masonry container */
+        column-count: 2;
+        column-gap: .7em;
+        width: 100%;
+        margin-left: 2em;
+    }
+    .cover-image {
+        object-fit: cover;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 1em;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 0em;
+        width: 100%;
+    }
+    .mini-container {
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+        padding-bottom: 2em;
+        justify-content: center;
+        margin-top: 3em;
+    }
+    .header {
+        text-align: center;
+        margin: 1em;
+    }
+    .caption {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .home-image {
+        width: 400px;
+    }
+    .image {
+        width: 200px;
+    }
+    a.requirement {
+        font-size: 1.5em;
+        margin: 1em;
+        text-align: center;
+    }
+    #about-photo {
+        margin-bottom: 2em;
+        width: 30%;
+        height: 30%;
+    }
+    #contact {
+        text-align: center;
+        font-size: 2em;
+    }
 }
